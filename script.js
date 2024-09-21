@@ -1,21 +1,24 @@
-function inserir(num) {
-  document.querySelector(".resultado").innerHTML += num;
+function insert(num) {
+  document.querySelector(".tela").innerHTML += num;
 }
 
-function limpar() {
-  document.querySelector(".resultado").innerHTML = "";
+function clean() {
+  document.querySelector(".tela").innerHTML = "";
 }
 
-function volteUm() {
-  let tela = document.querySelector(".resultado").innerHTML;
-  document.querySelector(".resultado").innerHTML = tela.substring(0, tela.length - 1);
+function back() {
+  let tela = document.querySelector(".tela").innerHTML;
+  document.querySelector(".tela").innerHTML = tela.substring(
+    0,
+    tela.length - 1
+  );
 }
 
-function operacao() {
-  let resultado = document.querySelector(".resultado").innerHTML;
-  if (resultado) {
-    document.querySelector(".resultado").innerHTML = eval(resultado);
+function calcular() {
+  let tela = document.querySelector(".tela").innerHTML;
+  if (tela) {
+    document.querySelector(".tela").innerHTML = eval(tela);
   } else {
-    document.querySelector(".resultado").innerHTML = "Nenhum comando";
+    document.querySelector(".tela").innerHTML = "Sem comando...";
   }
 }
