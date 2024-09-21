@@ -1,64 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-  width: 100%;
-  height: 100 vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-}
-
-input {
-  color: #ffff;
-  padding: 17px;
-  outline: none;
-  font-size: 30px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  border-radius: 25%;
-}
-
-.num {
-  width: 64px;
-  height: 67px;
-}
-
-.text{
-  width: 160px;
-  height: 22px;
-  border-radius: 23px;
-  letter-spacing: 5px;
+  background: linear-gradient(150deg, #68d956, #09ad22, #0d4e03);
+  height: 100vh;
   text-align: center;
-  margin-bottom: 12px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.text1{
-   width: 24px;
-   height: 26px;
-   border-radius: 50%;
-   letter-spacing: 5px;
-   text-align: center;
-   margin-bottom: 12px;
-   cursor: pointer;
-}
-.main {
-  display: inline-block;
+.calculadora {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000ee;
+
+  padding: 2rem;
+  border-radius: 1.5rem;
+  gap: 1.5rem;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.maincolor {
-  background-color: black;
+button {
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  background-color: #838383;
+  color: #fff;
+  border-radius: 0.1rem;
 }
 
-.blue{
-  background-color: aqua;
+
+[rowspan="2"] button {
+  height: 8.15rem;
+  background-color: #09ad22;
 }
-.pin{
-  background-color: deeppink;
+
+[colspan="2"] button {
+  width: 8.15rem;
+  background-color: #838383;
 }
-.gre{
-  background-color: rgb(80, 221, 44);
+
+button:hover {
+  background-color: #39393992;
 }
-.pur{
-  background-color: rgb(186, 26, 226);
-}
-.ora{
-  background-color: rgb(255, 96, 39);
+
+.resultado {
+  background-color: #fff;
+  height: 3rem;
+  color: #051c01;
+  font-size: 2rem;
+  text-align: end;
+  border-radius: 0.5rem;
 }
